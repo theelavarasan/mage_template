@@ -1,0 +1,51 @@
+package rules
+
+import org.springframework.web.multipart.MultipartFile;
+import org.mage.data_validator.prop.ErrorMessage;
+import java.util.List;
+import org.mage.data_validator.prop.ValidationHeaderFact;
+import org.mage.data_validator.rules.ValidationHeaderRule;
+
+
+global ErrorMessage errorMessage;
+global ValidationHeaderRule validationHeaderRule;
+global ValidationHeaderFact validationHeaderFact;
+
+rule "File type validation"
+agenda-group "fileTypeValidation"
+when
+    $file : MultipartFile(
+        !(originalFilename matches ".*\\.(xls|xlsx|csv|json)$")
+    )
+then
+    errorMessage.setMessage("Invalid file type: " + $file.getOriginalFilename() + ". Please upload an Excel, JSON, or CSV file.");
+    System.out.println("Rule 'File type validation' triggered for file: " + $file.getOriginalFilename());
+    System.out.println("Set errorMessage: " + errorMessage.getMessage());
+end
+
+rule "Validate Headers"
+agenda-group "validateHeaders"
+when
+    $fact : ValidationHeaderFact()
+then
+    List<String> missingHeaders = validationHeaderRule.getMissingHeaders($fact.getHeaders());
+    List<String> additionalHeaders = validationHeaderRule.getAdditionalHeaders($fact.getHeaders());
+
+    StringBuilder message = new StringBuilder();
+
+    if (!missingHeaders.isEmpty()) {
+        message.append("The following required headers are missing: ")
+               .append(String.join(", ", missingHeaders))
+               .append(". Please ensure that your template includes these headers.\n");
+    }
+
+    if (!additionalHeaders.isEmpty()) {
+        message.append("The following additional headers are present: ")
+                .append(String.join(", ", additionalHeaders))
+                .append(". Please remove these headers from your template.");
+    }
+
+    $fact.setValidationMessage(message.toString());
+end
+
+

@@ -1,0 +1,149 @@
+template_name,application,creator,frozen,OWNER/PATH,TABLE/FILE,table_row_count,action,scramble_scheme,COLUMN/PAGE,datatype,data_classification,anonymization_method,addl_info1,addl_info2,addl_info3,addl_info4,method_code,length,table_file_parameter,subset_enabled,subset_condition,conditional_masking_enabled,masking_condition
+MySQL_Template_Edit,MySQL_KR,KESHAV,No,ds_xs_1,customer,0,Mask,Direct Update (avoid deadlocks),c_first_name,varchar,-,Replace preserving format and length (Mage FPE Simple),0,0,NULL,NULL,MAGE_RMTS,0,NULL,NULL,NULL,Y,where employee_id < 10
+MySQL_Template_Edit,MySQL_KR,KESHAV,No,ds_xs_1,customer,0,Mask,Direct Update (avoid deadlocks),c_last_name,varchar,-,Last Names,UL,NULL,NULL,NULL,MAGE_LN,0,NULL,NULL,NULL,Y,where employee_id < 10
+MySQL_Template_Edit,MySQL_KR,KESHAV,No,ds_xs_1,dsc emplöyees_all.,0,Mask,Direct Update (avoid deadlocks),EMPLOYEE.ID,varchar,Employee Number,Redact characters,2,2,9,x,MAGE_RNC,0,NULL,Y,where employee_id < 1000,NULL,NULL
+MySQL_Template_Edit,MySQL_KR,KESHAV,No,ds_xs_1,dsc emplöyees_all.,0,Mask,Direct Update (avoid deadlocks),FI#$RST%.NAME,varchar,-,First Names,UL,NULL,NULL,NULL,MAGE_FN,0,NULL,Y,where employee_id < 1000,NULL,NULL
+MySQL_Template_Edit,MySQL_KR,KESHAV,No,ds_xs_1,dsc emplöyees_all.,0,Mask,Direct Update (avoid deadlocks),LAST%.NAME?;,varchar,-,Last Names,UL,NULL,NULL,NULL,MAGE_LN,0,NULL,Y,where employee_id < 1000,NULL,NULL
+MySQL_Template_Edit,MySQL_KR,KESHAV,No,ds_xs_1,dsc emplöyees_all_%,0,Mask,Direct Update (avoid deadlocks),EMPLOYEE%ID,varchar,Employee Number,Redact characters,2,2,9,x,MAGE_RNC,0,NULL,NULL,NULL,NULL,NULL
+MySQL_Template_Edit,MySQL_KR,KESHAV,No,ds_xs_1,dsc emplöyees_all_%,0,Mask,Direct Update (avoid deadlocks),FI#$RST%.NAME,varchar,-,First Names,UL,NULL,NULL,NULL,MAGE_FN,0,NULL,NULL,NULL,NULL,NULL
+MySQL_Template_Edit,MySQL_KR,KESHAV,No,ds_xs_1,dsc emplöyees_all_%,0,Mask,Direct Update (avoid deadlocks),LAST%.NAME?;,varchar,-,Last Names,UL,NULL,NULL,NULL,MAGE_LN,0,NULL,NULL,NULL,NULL,NULL
+MySQL_Template_Edit,MySQL_KR,KESHAV,No,ds_xs_1,dsc emplöyees_all_%.,0,Mask,Direct Update (avoid deadlocks),EMPLOYEE%.ID,varchar,-,Redact characters,2,2,9,x,MAGE_RNC,0,NULL,NULL,NULL,NULL,NULL
+MySQL_Template_Edit,MySQL_KR,KESHAV,No,ds_xs_1,dsc emplöyees_all_%.,0,Mask,Direct Update (avoid deadlocks),FI#$RST%.NAME,varchar,-,First Names,UL,NULL,NULL,NULL,MAGE_FN,0,NULL,NULL,NULL,NULL,NULL
+MySQL_Template_Edit,MySQL_KR,KESHAV,No,ds_xs_1,dsc emplöyees_all_%.,0,Mask,Direct Update (avoid deadlocks),LAST%.NAME?;,varchar,-,Last Names,UL,NULL,NULL,NULL,MAGE_LN,0,NULL,NULL,NULL,NULL,NULL
+MySQL_Template_Edit,MySQL_KR,KESHAV,No,ds_xs_1,dsc emplöyees_all_ş''ş''d©,0,Mask,Direct Update (avoid deadlocks),EMPLOYEE@%ID,varchar,Employee Number,Redact characters,2,2,9,x,MAGE_RNC,0,NULL,NULL,NULL,NULL,NULL
+MySQL_Template_Edit,MySQL_KR,KESHAV,No,ds_xs_1,dsc emplöyees_all_ş''ş''d©,0,Mask,Direct Update (avoid deadlocks),LAST<>NAME?;,varchar,-,Last Names,UL,NULL,NULL,NULL,MAGE_LN,0,NULL,NULL,NULL,NULL,NULL
+MySQL_Template_Edit,MySQL_KR,KESHAV,No,ds_xs_1,dsc emplöyees_all_ş''ş''d©_fk,0,Mask,Direct Update (avoid deadlocks),EMPLOYEE@%ID,varchar,-,Redact characters,2,2,9,x,MAGE_RNC,0,NULL,NULL,NULL,NULL,NULL
+MySQL_Template_Edit,MySQL_KR,KESHAV,No,ds_xs_1,dsc emplöyees_all_ş''ş''d©_fk,0,Mask,Direct Update (avoid deadlocks),LAST<>NAME?;,varchar,-,Last Names,UL,NULL,NULL,NULL,MAGE_LN,0,NULL,NULL,NULL,NULL,NULL
+MySQL_Template_Edit,MySQL_KR,KESHAV,No,ds_xs_1,dsc_emp_low_dcs,0,Mask,Direct Update (avoid deadlocks),FIRST_NAME,char,First Name,First Names,UL,NULL,NULL,NULL,MAGE_FN,0,NULL,NULL,NULL,NULL,NULL
+MySQL_Template_Edit,MySQL_KR,KESHAV,No,ds_xs_1,dsc_emp_low_dcs,0,Mask,Direct Update (avoid deadlocks),FIRST_NAME_EXCLUDE,varchar,-,First Names,UU,NULL,NULL,NULL,MAGE_FN,0,NULL,NULL,NULL,NULL,NULL
+MySQL_Template_Edit,MySQL_KR,KESHAV,No,ds_xs_1,dsc_emp_ni_all_datatype,0,Mask,Direct Update (avoid deadlocks),EMPLOYEE_ID,int,Employee Number,Redact characters,2,2,9,x,MAGE_RNC,0,NULL,NULL,NULL,NULL,NULL
+MySQL_Template_Edit,MySQL_KR,KESHAV,No,ds_xs_1,dsc_emp_ni_all_datatype,0,Mask,Direct Update (avoid deadlocks),FIRST_NAME,char,First Name,First Names,UL,NULL,NULL,NULL,MAGE_FN,0,NULL,NULL,NULL,NULL,NULL
+MySQL_Template_Edit,MySQL_KR,KESHAV,No,ds_xs_1,dsc_emp_ni_all_datatype,0,Mask,Direct Update (avoid deadlocks),FIRST_NAME_1,char,-,First Names,UL,NULL,NULL,NULL,MAGE_FN,0,NULL,NULL,NULL,NULL,NULL
+MySQL_Template_Edit,MySQL_KR,KESHAV,No,ds_xs_1,dsc_emp_ni_all_datatype,0,Mask,Direct Update (avoid deadlocks),LAST_NAME,varchar,-,Last Names,UL,NULL,NULL,NULL,MAGE_LN,0,NULL,NULL,NULL,NULL,NULL
+MySQL_Template_Edit,MySQL_KR,KESHAV,No,ds_xs_1,dsc_emp_ni_all_datatype,0,Mask,Direct Update (avoid deadlocks),VALUE_FN1,varchar,-,Redact characters,2,2,9,x,MAGE_RNC,0,NULL,NULL,NULL,NULL,NULL
+MySQL_Template_Edit,MySQL_KR,KESHAV,No,ds_xs_1,dsc_emp_ni_all_datatype,0,Mask,Direct Update (avoid deadlocks),VALUE_FN2,varchar,-,Redact characters,2,2,9,x,MAGE_RNC,0,NULL,NULL,NULL,NULL,NULL
+MySQL_Template_Edit,MySQL_KR,KESHAV,No,ds_xs_1,dsc_employee$_$&~,0,Mask,Direct Update (avoid deadlocks),FIRST_$&~NAME,varchar,-,First Names,UL,NULL,NULL,NULL,MAGE_FN,0,NULL,NULL,NULL,NULL,NULL
+MySQL_Template_Edit,MySQL_KR,KESHAV,No,ds_xs_1,dsc_employees,0,Mask,Direct Update (avoid deadlocks),first_name,varchar,First Name,First Names,UL,NULL,NULL,NULL,MAGE_FN,0,NULL,NULL,NULL,NULL,NULL
+MySQL_Template_Edit,MySQL_KR,KESHAV,No,ds_xs_1,dsc_employees,0,Mask,Direct Update (avoid deadlocks),last_name,varchar,-,Last Names,UL,NULL,NULL,NULL,MAGE_LN,0,NULL,NULL,NULL,NULL,NULL
+MySQL_Template_Edit,MySQL_KR,KESHAV,No,ds_xs_1,dsc_employees_all_dc,0,Mask,Direct Update (avoid deadlocks),employee_id,varchar,-,Redact characters,2,2,9,x,MAGE_RNC,0,NULL,NULL,NULL,NULL,NULL
+MySQL_Template_Edit,MySQL_KR,KESHAV,No,ds_xs_1,dsc_employees_all_dc,0,Mask,Direct Update (avoid deadlocks),first_name,varchar,-,First Names,UL,NULL,NULL,NULL,MAGE_FN,0,NULL,NULL,NULL,NULL,NULL
+MySQL_Template_Edit,MySQL_KR,KESHAV,No,ds_xs_1,dsc_employees_all_dc,0,Mask,Direct Update (avoid deadlocks),last_name,varchar,-,Last Names,UL,NULL,NULL,NULL,MAGE_LN,0,NULL,NULL,NULL,NULL,NULL
+MySQL_Template_Edit,MySQL_KR,KESHAV,No,ds_xs_1,dsc_employees_all_smallcase,0,Mask,Direct Update (avoid deadlocks),employee_id,varchar,-,Redact characters,2,2,9,x,MAGE_RNC,0,NULL,NULL,NULL,NULL,NULL
+MySQL_Template_Edit,MySQL_KR,KESHAV,No,ds_xs_1,dsc_employees_all_smallcase,0,Mask,Direct Update (avoid deadlocks),first_name,varchar,-,First Names,UL,NULL,NULL,NULL,MAGE_FN,0,NULL,NULL,NULL,NULL,NULL
+MySQL_Template_Edit,MySQL_KR,KESHAV,No,ds_xs_1,dsc_employees_all_smallcase,0,Mask,Direct Update (avoid deadlocks),last_name,varchar,-,Last Names,UL,NULL,NULL,NULL,MAGE_LN,0,NULL,NULL,NULL,NULL,NULL
+MySQL_Template_Edit,MySQL_KR,KESHAV,No,ds_xs_1,dsc_employees_fk_tbl,0,Mask,Direct Update (avoid deadlocks),employee_id,varchar,Employee Number,Redact characters,2,2,9,x,MAGE_RNC,0,NULL,NULL,NULL,NULL,NULL
+MySQL_Template_Edit,MySQL_KR,KESHAV,No,ds_xs_1,dsc_employees_fk_tbl,0,Mask,Direct Update (avoid deadlocks),first_name,varchar,First Name,First Names,UL,NULL,NULL,NULL,MAGE_FN,0,NULL,NULL,NULL,NULL,NULL
+MySQL_Template_Edit,MySQL_KR,KESHAV,No,ds_xs_1,dsc_employees_fk_tbl,0,Mask,Direct Update (avoid deadlocks),last_name,varchar,-,Last Names,UL,NULL,NULL,NULL,MAGE_LN,0,NULL,NULL,NULL,NULL,NULL
+MySQL_Template_Edit,MySQL_KR,KESHAV,No,ds_xs_1,dsc_employees_master_tbl,0,Mask,Direct Update (avoid deadlocks),employee_id,varchar,-,Redact characters,2,2,9,x,MAGE_RNC,0,NULL,NULL,NULL,NULL,NULL
+MySQL_Template_Edit,MySQL_KR,KESHAV,No,ds_xs_1,dsc_employees_master_tbl,0,Mask,Direct Update (avoid deadlocks),first_name,varchar,-,First Names,UL,NULL,NULL,NULL,MAGE_FN,0,NULL,NULL,NULL,NULL,NULL
+MySQL_Template_Edit,MySQL_KR,KESHAV,No,ds_xs_1,dsc_employees_master_tbl,0,Mask,Direct Update (avoid deadlocks),last_name,varchar,-,Last Names,UL,NULL,NULL,NULL,MAGE_LN,0,NULL,NULL,NULL,NULL,NULL
+MySQL_Template_Edit,MySQL_KR,KESHAV,No,ds_xs_1,dsc_employees_pk_tbl,0,Mask,Direct Update (avoid deadlocks),employee_id,varchar,-,Redact characters,2,2,9,x,MAGE_RNC,0,NULL,NULL,NULL,NULL,NULL
+MySQL_Template_Edit,MySQL_KR,KESHAV,No,ds_xs_1,dsc_employees_pk_tbl,0,Mask,Direct Update (avoid deadlocks),first_name,varchar,-,First Names,UL,NULL,NULL,NULL,MAGE_FN,0,NULL,NULL,NULL,NULL,NULL
+MySQL_Template_Edit,MySQL_KR,KESHAV,No,ds_xs_1,dsc_employees_pk_tbl,0,Mask,Direct Update (avoid deadlocks),last_name,varchar,-,Last Names,UL,NULL,NULL,NULL,MAGE_LN,0,NULL,NULL,NULL,NULL,NULL
+MySQL_Template_Edit,MySQL_KR,KESHAV,No,ds_xs_1,dsc_exclude_pattern_tbl,0,Mask,Direct Update (avoid deadlocks),first_name,varchar,First Name,First Names,UL,NULL,NULL,NULL,MAGE_FN,0,NULL,NULL,NULL,NULL,NULL
+MySQL_Template_Edit,MySQL_KR,KESHAV,No,ds_xs_1,dsc_exclude_pattern_tbl,0,Mask,Direct Update (avoid deadlocks),first_name_exclude,varchar,-,First Names,UL,NULL,NULL,NULL,MAGE_FN,0,NULL,NULL,NULL,NULL,NULL
+MySQL_Template_Edit,MySQL_KR,KESHAV,No,ds_xs_1,dsc_frénch_tbl,0,Mask,Direct Update (avoid deadlocks),firstname,varchar,-,First Names,UL,NULL,NULL,NULL,MAGE_FN,0,NULL,NULL,NULL,NULL,NULL
+MySQL_Template_Edit,MySQL_KR,KESHAV,No,ds_xs_1,dsc_frénch_tbl,0,Mask,Direct Update (avoid deadlocks),lastname,varchar,-,Last Names,UL,NULL,NULL,NULL,MAGE_LN,0,NULL,NULL,NULL,NULL,NULL
+MySQL_Template_Edit,MySQL_KR,KESHAV,No,ds_xs_1,dsc_job_history,0,Mask,Direct Update (avoid deadlocks),last_name,varchar,-,Last Names,UL,NULL,NULL,NULL,MAGE_LN,0,NULL,NULL,NULL,NULL,NULL
+MySQL_Template_Edit,MySQL_KR,KESHAV,No,ds_xs_1,dsc_test?:data_!#*(,0,Mask,Direct Update (avoid deadlocks),first!@null*,char,-,First Names,UL,NULL,NULL,NULL,MAGE_FN,0,NULL,NULL,NULL,NULL,NULL
+MySQL_Template_Edit,MySQL_KR,KESHAV,No,ds_xs_1,dsc_test?:data_!#*(,0,Mask,Direct Update (avoid deadlocks),"first,name##exclude",varchar,-,First Names,UU,NULL,NULL,NULL,MAGE_FN,0,NULL,NULL,NULL,NULL,NULL
+MySQL_Template_Edit,MySQL_KR,KESHAV,No,ds_xs_1,dsc_xml_json_varchar,0,Mask,Direct Update (avoid deadlocks),COMMENTS,varchar,-,Last Names,UL,NULL,NULL,NULL,MAGE_LN,0,NULL,NULL,NULL,NULL,NULL
+MySQL_Template_Edit,MySQL_KR,KESHAV,No,ds_xs_1,dsc_xml_json_varchar,0,Mask,Direct Update (avoid deadlocks),comments_1,varchar,-,Redact characters,2,2,9,x,MAGE_RNC,0,NULL,NULL,NULL,NULL,NULL
+MySQL_Template_Edit,MySQL_KR,KESHAV,No,ds_xs_1,dsc_xml_json_varchar,0,Mask,Direct Update (avoid deadlocks),description,varchar,-,Redact characters,2,2,9,x,MAGE_RNC,0,NULL,NULL,NULL,NULL,NULL
+MySQL_Template_Edit,MySQL_KR,KESHAV,No,ds_xs_1,dsc_xml_json_varchar,0,Mask,Direct Update (avoid deadlocks),description_1,varchar,-,Redact characters,2,2,9,x,MAGE_RNC,0,NULL,NULL,NULL,NULL,NULL
+MySQL_Template_Edit,MySQL_KR,KESHAV,No,ds_xs_1,employee_audits,0,Mask,Direct Update (avoid deadlocks),employee_id,tinyint,Employee Number,Redact characters,2,2,9,x,MAGE_RNC,0,NULL,NULL,NULL,NULL,NULL
+MySQL_Template_Edit,MySQL_KR,KESHAV,No,ds_xs_1,employee_audits,0,Mask,Direct Update (avoid deadlocks),last_name,varchar,-,Last Names,UL,NULL,NULL,NULL,MAGE_LN,0,NULL,NULL,NULL,NULL,NULL
+MySQL_Template_Edit,MySQL_KR,KESHAV,No,ds_xs_1,func_address_details,0,Mask,Direct Update (avoid deadlocks),first_name,varchar,-,First Names,UL,NULL,NULL,NULL,MAGE_FN,0,NULL,NULL,NULL,NULL,NULL
+MySQL_Template_Edit,MySQL_KR,KESHAV,No,ds_xs_1,func_address_details,0,Mask,Direct Update (avoid deadlocks),last_name,varchar,-,Last Names,UL,NULL,NULL,NULL,MAGE_LN,0,NULL,NULL,NULL,NULL,NULL
+MySQL_Template_Edit,MySQL_KR,KESHAV,No,ds_xs_1,func_functions_data,0,Mask,Direct Update (avoid deadlocks),first_name_1,varchar,-,First Names,UL,NULL,NULL,NULL,MAGE_FN,0,NULL,NULL,NULL,NULL,NULL
+MySQL_Template_Edit,MySQL_KR,KESHAV,No,ds_xs_1,func_functions_data,0,Mask,Direct Update (avoid deadlocks),first_name_10,varchar,-,First Names,UL,NULL,NULL,NULL,MAGE_FN,0,NULL,NULL,NULL,NULL,NULL
+MySQL_Template_Edit,MySQL_KR,KESHAV,No,ds_xs_1,func_functions_data,0,Mask,Direct Update (avoid deadlocks),first_name_2,varchar,-,First Names,UL,NULL,NULL,NULL,MAGE_FN,0,NULL,NULL,NULL,NULL,NULL
+MySQL_Template_Edit,MySQL_KR,KESHAV,No,ds_xs_1,func_functions_data,0,Mask,Direct Update (avoid deadlocks),first_name_3,varchar,-,First Names,UL,NULL,NULL,NULL,MAGE_FN,0,NULL,NULL,NULL,NULL,NULL
+MySQL_Template_Edit,MySQL_KR,KESHAV,No,ds_xs_1,func_functions_data,0,Mask,Direct Update (avoid deadlocks),first_name_4,varchar,-,First Names,UL,NULL,NULL,NULL,MAGE_FN,0,NULL,NULL,NULL,NULL,NULL
+MySQL_Template_Edit,MySQL_KR,KESHAV,No,ds_xs_1,func_functions_data,0,Mask,Direct Update (avoid deadlocks),first_name_5,varchar,-,First Names,UL,NULL,NULL,NULL,MAGE_FN,0,NULL,NULL,NULL,NULL,NULL
+MySQL_Template_Edit,MySQL_KR,KESHAV,No,ds_xs_1,func_functions_data,0,Mask,Direct Update (avoid deadlocks),first_name_6,varchar,-,First Names,UL,NULL,NULL,NULL,MAGE_FN,0,NULL,NULL,NULL,NULL,NULL
+MySQL_Template_Edit,MySQL_KR,KESHAV,No,ds_xs_1,func_functions_data,0,Mask,Direct Update (avoid deadlocks),first_name_7,varchar,-,First Names,UL,NULL,NULL,NULL,MAGE_FN,0,NULL,NULL,NULL,NULL,NULL
+MySQL_Template_Edit,MySQL_KR,KESHAV,No,ds_xs_1,func_functions_data,0,Mask,Direct Update (avoid deadlocks),first_name_8,varchar,-,First Names,UL,NULL,NULL,NULL,MAGE_FN,0,NULL,NULL,NULL,NULL,NULL
+MySQL_Template_Edit,MySQL_KR,KESHAV,No,ds_xs_1,func_functions_data,0,Mask,Direct Update (avoid deadlocks),first_name_9,varchar,-,First Names,UL,NULL,NULL,NULL,MAGE_FN,0,NULL,NULL,NULL,NULL,NULL
+MySQL_Template_Edit,MySQL_KR,KESHAV,No,ds_xs_1,func_functions_data,0,Mask,Direct Update (avoid deadlocks),last_name_1,varchar,-,Last Names,UL,NULL,NULL,NULL,MAGE_LN,0,NULL,NULL,NULL,NULL,NULL
+MySQL_Template_Edit,MySQL_KR,KESHAV,No,ds_xs_1,func_functions_data,0,Mask,Direct Update (avoid deadlocks),last_name_10,varchar,-,Last Names,UL,NULL,NULL,NULL,MAGE_LN,0,NULL,NULL,NULL,NULL,NULL
+MySQL_Template_Edit,MySQL_KR,KESHAV,No,ds_xs_1,func_functions_data,0,Mask,Direct Update (avoid deadlocks),last_name_2,varchar,-,Last Names,UL,NULL,NULL,NULL,MAGE_LN,0,NULL,NULL,NULL,NULL,NULL
+MySQL_Template_Edit,MySQL_KR,KESHAV,No,ds_xs_1,func_functions_data,0,Mask,Direct Update (avoid deadlocks),last_name_3,varchar,-,Last Names,UL,NULL,NULL,NULL,MAGE_LN,0,NULL,NULL,NULL,NULL,NULL
+MySQL_Template_Edit,MySQL_KR,KESHAV,No,ds_xs_1,func_functions_data,0,Mask,Direct Update (avoid deadlocks),last_name_4,varchar,-,Last Names,UL,NULL,NULL,NULL,MAGE_LN,0,NULL,NULL,NULL,NULL,NULL
+MySQL_Template_Edit,MySQL_KR,KESHAV,No,ds_xs_1,func_functions_data,0,Mask,Direct Update (avoid deadlocks),last_name_5,varchar,-,Last Names,UL,NULL,NULL,NULL,MAGE_LN,0,NULL,NULL,NULL,NULL,NULL
+MySQL_Template_Edit,MySQL_KR,KESHAV,No,ds_xs_1,func_functions_data,0,Mask,Direct Update (avoid deadlocks),last_name_6,varchar,-,Last Names,UL,NULL,NULL,NULL,MAGE_LN,0,NULL,NULL,NULL,NULL,NULL
+MySQL_Template_Edit,MySQL_KR,KESHAV,No,ds_xs_1,func_functions_data,0,Mask,Direct Update (avoid deadlocks),last_name_7,varchar,-,Last Names,UL,NULL,NULL,NULL,MAGE_LN,0,NULL,NULL,NULL,NULL,NULL
+MySQL_Template_Edit,MySQL_KR,KESHAV,No,ds_xs_1,func_functions_data,0,Mask,Direct Update (avoid deadlocks),last_name_8,varchar,-,Last Names,UL,NULL,NULL,NULL,MAGE_LN,0,NULL,NULL,NULL,NULL,NULL
+MySQL_Template_Edit,MySQL_KR,KESHAV,No,ds_xs_1,func_functions_data,0,Mask,Direct Update (avoid deadlocks),last_name_9,varchar,-,Last Names,UL,NULL,NULL,NULL,MAGE_LN,0,NULL,NULL,NULL,NULL,NULL
+MySQL_Template_Edit,MySQL_KR,KESHAV,No,ds_xs_1,func_user_address_vpac,0,Mask,Direct Update (avoid deadlocks),first_name,varchar,First Name,First Names,UL,NULL,NULL,NULL,MAGE_FN,0,NULL,NULL,NULL,NULL,NULL
+MySQL_Template_Edit,MySQL_KR,KESHAV,No,ds_xs_1,isc_all_constraints,0,Mask,Direct Update (avoid deadlocks),last_name,varchar,-,Last Names,UL,NULL,NULL,NULL,MAGE_LN,0,NULL,NULL,NULL,NULL,NULL
+MySQL_Template_Edit,MySQL_KR,KESHAV,No,ds_xs_1,isc_auto_tbl,0,Mask,Direct Update (avoid deadlocks),c_first_name,varchar,-,First Names,UL,NULL,NULL,NULL,MAGE_FN,0,NULL,NULL,NULL,NULL,NULL
+MySQL_Template_Edit,MySQL_KR,KESHAV,No,ds_xs_1,isc_auto_tbl,0,Mask,Direct Update (avoid deadlocks),c_last_name,varchar,-,Last Names,UL,NULL,NULL,NULL,MAGE_LN,0,NULL,NULL,NULL,NULL,NULL
+MySQL_Template_Edit,MySQL_KR,KESHAV,No,ds_xs_1,isc_condition_tbl,0,Mask,Direct Update (avoid deadlocks),c_first_name,varchar,-,First Names,UL,NULL,NULL,NULL,MAGE_FN,0,NULL,NULL,NULL,NULL,NULL
+MySQL_Template_Edit,MySQL_KR,KESHAV,No,ds_xs_1,isc_condition_tbl,0,Mask,Direct Update (avoid deadlocks),c_last_name,varchar,-,Last Names,UL,NULL,NULL,NULL,MAGE_LN,0,NULL,NULL,NULL,NULL,NULL
+MySQL_Template_Edit,MySQL_KR,KESHAV,No,ds_xs_1,isc_customer_bkp,0,Mask,Direct Update (avoid deadlocks),c_first_name,varchar,-,First Names,UL,NULL,NULL,NULL,MAGE_FN,0,NULL,NULL,NULL,NULL,NULL
+MySQL_Template_Edit,MySQL_KR,KESHAV,No,ds_xs_1,isc_customer_bkp,0,Mask,Direct Update (avoid deadlocks),c_last_name,varchar,-,Last Names,UL,NULL,NULL,NULL,MAGE_LN,0,NULL,NULL,NULL,NULL,NULL
+MySQL_Template_Edit,MySQL_KR,KESHAV,No,ds_xs_1,isc_dir_cnks_comp_masked,0,Mask,Direct Update (avoid deadlocks),c_first_name,varchar,-,First Names,UL,NULL,NULL,NULL,MAGE_FN,0,NULL,NULL,NULL,NULL,NULL
+MySQL_Template_Edit,MySQL_KR,KESHAV,No,ds_xs_1,isc_dir_cnks_comp_masked,0,Mask,Direct Update (avoid deadlocks),c_last_name,varchar,-,Last Names,UL,NULL,NULL,NULL,MAGE_LN,0,NULL,NULL,NULL,NULL,NULL
+MySQL_Template_Edit,MySQL_KR,KESHAV,No,ds_xs_1,isc_dir_cnks_comp_not_masked,0,Mask,Direct Update (avoid deadlocks),c_first_name,varchar,-,First Names,UL,NULL,NULL,NULL,MAGE_FN,0,NULL,NULL,NULL,NULL,NULL
+MySQL_Template_Edit,MySQL_KR,KESHAV,No,ds_xs_1,isc_dir_cnks_comp_not_masked,0,Mask,Direct Update (avoid deadlocks),c_last_name,varchar,-,Last Names,UL,NULL,NULL,NULL,MAGE_LN,0,NULL,NULL,NULL,NULL,NULL
+MySQL_Template_Edit,MySQL_KR,KESHAV,No,ds_xs_1,isc_dir_cnks_fk_masked,0,Mask,Direct Update (avoid deadlocks),c_first_name,varchar,-,First Names,UL,NULL,NULL,NULL,MAGE_FN,0,NULL,NULL,NULL,NULL,NULL
+MySQL_Template_Edit,MySQL_KR,KESHAV,No,ds_xs_1,isc_dir_cnks_fk_masked,0,Mask,Direct Update (avoid deadlocks),c_last_name,varchar,-,Last Names,UL,NULL,NULL,NULL,MAGE_LN,0,NULL,NULL,NULL,NULL,NULL
+MySQL_Template_Edit,MySQL_KR,KESHAV,No,ds_xs_1,isc_dir_cnks_fk_not_masked,0,Mask,Direct Update (avoid deadlocks),c_first_name,varchar,-,First Names,UL,NULL,NULL,NULL,MAGE_FN,0,NULL,NULL,NULL,NULL,NULL
+MySQL_Template_Edit,MySQL_KR,KESHAV,No,ds_xs_1,isc_dir_cnks_fk_not_masked,0,Mask,Direct Update (avoid deadlocks),c_last_name,varchar,-,Last Names,UL,NULL,NULL,NULL,MAGE_LN,0,NULL,NULL,NULL,NULL,NULL
+MySQL_Template_Edit,MySQL_KR,KESHAV,No,ds_xs_1,isc_dir_cnks_pk_masked,0,Mask,Direct Update (avoid deadlocks),c_first_name,varchar,-,First Names,UL,NULL,NULL,NULL,MAGE_FN,0,NULL,NULL,NULL,NULL,NULL
+MySQL_Template_Edit,MySQL_KR,KESHAV,No,ds_xs_1,isc_dir_cnks_pk_masked,0,Mask,Direct Update (avoid deadlocks),c_last_name,varchar,-,Last Names,UL,NULL,NULL,NULL,MAGE_LN,0,NULL,NULL,NULL,NULL,NULL
+MySQL_Template_Edit,MySQL_KR,KESHAV,No,ds_xs_1,isc_dir_cnks_pk_not_maksed,0,Mask,Direct Update (avoid deadlocks),c_first_name,varchar,-,First Names,UL,NULL,NULL,NULL,MAGE_FN,0,NULL,NULL,NULL,NULL,NULL
+MySQL_Template_Edit,MySQL_KR,KESHAV,No,ds_xs_1,isc_dir_cnks_pk_not_maksed,0,Mask,Direct Update (avoid deadlocks),c_last_name,varchar,-,Last Names,UL,NULL,NULL,NULL,MAGE_LN,0,NULL,NULL,NULL,NULL,NULL
+MySQL_Template_Edit,MySQL_KR,KESHAV,No,ds_xs_1,isc_dir_cnks_tbl,0,Mask,Shadow Table,c_first_name,varchar,-,First Names,UL,NULL,NULL,NULL,MAGE_FN,0,NULL,NULL,NULL,NULL,NULL
+MySQL_Template_Edit,MySQL_KR,KESHAV,No,ds_xs_1,isc_dir_cnks_tbl,0,Mask,Shadow Table,c_last_name,varchar,-,Last Names,UL,NULL,NULL,NULL,MAGE_LN,0,NULL,NULL,NULL,NULL,NULL
+MySQL_Template_Edit,MySQL_KR,KESHAV,No,ds_xs_1,isc_dir_cnks_uq_masked,0,Mask,Direct Update (avoid deadlocks),c_first_name,varchar,-,First Names,UL,NULL,NULL,NULL,MAGE_FN,0,NULL,NULL,NULL,NULL,NULL
+MySQL_Template_Edit,MySQL_KR,KESHAV,No,ds_xs_1,isc_dir_cnks_uq_masked,0,Mask,Direct Update (avoid deadlocks),c_last_name,varchar,-,Last Names,UL,NULL,NULL,NULL,MAGE_LN,0,NULL,NULL,NULL,NULL,NULL
+MySQL_Template_Edit,MySQL_KR,KESHAV,No,ds_xs_1,isc_dir_cnks_uq_not_masked,0,Mask,Direct Update (avoid deadlocks),c_first_name,varchar,-,First Names,UL,NULL,NULL,NULL,MAGE_FN,0,NULL,NULL,NULL,NULL,NULL
+MySQL_Template_Edit,MySQL_KR,KESHAV,No,ds_xs_1,isc_dir_cnks_uq_not_masked,0,Mask,Direct Update (avoid deadlocks),c_last_name,varchar,-,Last Names,UL,NULL,NULL,NULL,MAGE_LN,0,NULL,NULL,NULL,NULL,NULL
+MySQL_Template_Edit,MySQL_KR,KESHAV,No,ds_xs_1,isc_dir_comp_masked,0,Mask,Direct Update (avoid deadlocks),c_first_name,varchar,-,First Names,UL,NULL,NULL,NULL,MAGE_FN,0,NULL,NULL,NULL,NULL,NULL
+MySQL_Template_Edit,MySQL_KR,KESHAV,No,ds_xs_1,isc_dir_comp_masked,0,Mask,Direct Update (avoid deadlocks),c_last_name,varchar,-,Last Names,UL,NULL,NULL,NULL,MAGE_LN,0,NULL,NULL,NULL,NULL,NULL
+MySQL_Template_Edit,MySQL_KR,KESHAV,No,ds_xs_1,isc_dir_comp_not_masked,0,Mask,Direct Update (avoid deadlocks),c_first_name,varchar,-,First Names,UL,NULL,NULL,NULL,MAGE_FN,0,NULL,NULL,NULL,NULL,NULL
+MySQL_Template_Edit,MySQL_KR,KESHAV,No,ds_xs_1,isc_dir_comp_not_masked,0,Mask,Direct Update (avoid deadlocks),c_last_name,varchar,-,Last Names,UL,NULL,NULL,NULL,MAGE_LN,0,NULL,NULL,NULL,NULL,NULL
+MySQL_Template_Edit,MySQL_KR,KESHAV,No,ds_xs_1,isc_dir_fk_masked,0,Mask,Direct Update (avoid deadlocks),c_first_name,varchar,-,First Names,UL,NULL,NULL,NULL,MAGE_FN,0,NULL,NULL,NULL,NULL,NULL
+MySQL_Template_Edit,MySQL_KR,KESHAV,No,ds_xs_1,isc_dir_fk_masked,0,Mask,Direct Update (avoid deadlocks),c_last_name,varchar,-,Last Names,UL,NULL,NULL,NULL,MAGE_LN,0,NULL,NULL,NULL,NULL,NULL
+MySQL_Template_Edit,MySQL_KR,KESHAV,No,ds_xs_1,isc_dir_fk_not_masked,0,Mask,Direct Update (avoid deadlocks),c_first_name,varchar,-,First Names,UL,NULL,NULL,NULL,MAGE_FN,0,NULL,NULL,NULL,NULL,NULL
+MySQL_Template_Edit,MySQL_KR,KESHAV,No,ds_xs_1,isc_dir_fk_not_masked,0,Mask,Direct Update (avoid deadlocks),c_last_name,varchar,-,Last Names,UL,NULL,NULL,NULL,MAGE_LN,0,NULL,NULL,NULL,NULL,NULL
+MySQL_Template_Edit,MySQL_KR,KESHAV,No,ds_xs_1,isc_dir_pk_masked,0,Mask,Direct Update (avoid deadlocks),c_first_name,varchar,-,First Names,UL,NULL,NULL,NULL,MAGE_FN,0,NULL,NULL,NULL,NULL,NULL
+MySQL_Template_Edit,MySQL_KR,KESHAV,No,ds_xs_1,isc_dir_pk_masked,0,Mask,Direct Update (avoid deadlocks),c_last_name,varchar,-,Last Names,UL,NULL,NULL,NULL,MAGE_LN,0,NULL,NULL,NULL,NULL,NULL
+MySQL_Template_Edit,MySQL_KR,KESHAV,No,ds_xs_1,isc_dir_pk_not_masked,0,Mask,Direct Update (avoid deadlocks),c_first_name,varchar,-,First Names,UL,NULL,NULL,NULL,MAGE_FN,0,NULL,NULL,NULL,NULL,NULL
+MySQL_Template_Edit,MySQL_KR,KESHAV,No,ds_xs_1,isc_dir_pk_not_masked,0,Mask,Direct Update (avoid deadlocks),c_last_name,varchar,-,Last Names,UL,NULL,NULL,NULL,MAGE_LN,0,NULL,NULL,NULL,NULL,NULL
+MySQL_Template_Edit,MySQL_KR,KESHAV,No,ds_xs_1,isc_dir_tbl,0,Mask,Direct Update (avoid deadlocks),c_first_name,varchar,-,First Names,UL,NULL,NULL,NULL,MAGE_FN,0,NULL,NULL,NULL,NULL,NULL
+MySQL_Template_Edit,MySQL_KR,KESHAV,No,ds_xs_1,isc_dir_tbl,0,Mask,Direct Update (avoid deadlocks),c_last_name,varchar,-,Last Names,UL,NULL,NULL,NULL,MAGE_LN,0,NULL,NULL,NULL,NULL,NULL
+MySQL_Template_Edit,MySQL_KR,KESHAV,No,ds_xs_1,isc_dir_uq_masked,0,Mask,Direct Update (avoid deadlocks),c_first_name,varchar,-,First Names,UL,NULL,NULL,NULL,MAGE_FN,0,NULL,NULL,NULL,NULL,NULL
+MySQL_Template_Edit,MySQL_KR,KESHAV,No,ds_xs_1,isc_dir_uq_masked,0,Mask,Direct Update (avoid deadlocks),c_last_name,varchar,-,Last Names,UL,NULL,NULL,NULL,MAGE_LN,0,NULL,NULL,NULL,NULL,NULL
+MySQL_Template_Edit,MySQL_KR,KESHAV,No,ds_xs_1,isc_dir_uq_not_masked,0,Mask,Direct Update (avoid deadlocks),c_first_name,varchar,-,First Names,UL,NULL,NULL,NULL,MAGE_FN,0,NULL,NULL,NULL,NULL,NULL
+MySQL_Template_Edit,MySQL_KR,KESHAV,No,ds_xs_1,isc_dir_uq_not_masked,0,Mask,Direct Update (avoid deadlocks),c_last_name,varchar,-,Last Names,UL,NULL,NULL,NULL,MAGE_LN,0,NULL,NULL,NULL,NULL,NULL
+MySQL_Template_Edit,MySQL_KR,KESHAV,No,ds_xs_1,isc_shadow_comp_masked,0,Mask,Direct Update (avoid deadlocks),c_first_name,varchar,-,First Names,UL,NULL,NULL,NULL,MAGE_FN,0,NULL,NULL,NULL,NULL,NULL
+MySQL_Template_Edit,MySQL_KR,KESHAV,No,ds_xs_1,isc_shadow_comp_masked,0,Mask,Direct Update (avoid deadlocks),c_last_name,varchar,-,Last Names,UL,NULL,NULL,NULL,MAGE_LN,0,NULL,NULL,NULL,NULL,NULL
+MySQL_Template_Edit,MySQL_KR,KESHAV,No,ds_xs_1,isc_shadow_comp_not_masked,0,Mask,Direct Update (avoid deadlocks),c_first_name,varchar,-,First Names,UL,NULL,NULL,NULL,MAGE_FN,0,NULL,NULL,NULL,NULL,NULL
+MySQL_Template_Edit,MySQL_KR,KESHAV,No,ds_xs_1,isc_shadow_comp_not_masked,0,Mask,Direct Update (avoid deadlocks),c_last_name,varchar,-,Last Names,UL,NULL,NULL,NULL,MAGE_LN,0,NULL,NULL,NULL,NULL,NULL
+MySQL_Template_Edit,MySQL_KR,KESHAV,No,ds_xs_1,isc_shadow_fk_masked,0,Mask,Direct Update (avoid deadlocks),c_first_name,varchar,-,First Names,UL,NULL,NULL,NULL,MAGE_FN,0,NULL,NULL,NULL,NULL,NULL
+MySQL_Template_Edit,MySQL_KR,KESHAV,No,ds_xs_1,isc_shadow_fk_masked,0,Mask,Direct Update (avoid deadlocks),c_last_name,varchar,-,Last Names,UL,NULL,NULL,NULL,MAGE_LN,0,NULL,NULL,NULL,NULL,NULL
+MySQL_Template_Edit,MySQL_KR,KESHAV,No,ds_xs_1,isc_shadow_fk_not_masked,0,Mask,Direct Update (avoid deadlocks),c_first_name,varchar,-,First Names,UL,NULL,NULL,NULL,MAGE_FN,0,NULL,NULL,NULL,NULL,NULL
+MySQL_Template_Edit,MySQL_KR,KESHAV,No,ds_xs_1,isc_shadow_fk_not_masked,0,Mask,Direct Update (avoid deadlocks),c_last_name,varchar,-,Last Names,UL,NULL,NULL,NULL,MAGE_LN,0,NULL,NULL,NULL,NULL,NULL
+MySQL_Template_Edit,MySQL_KR,KESHAV,No,ds_xs_1,isc_shadow_pk_masked,0,Mask,Direct Update (avoid deadlocks),c_first_name,varchar,-,First Names,UL,NULL,NULL,NULL,MAGE_FN,0,NULL,NULL,NULL,NULL,NULL
+MySQL_Template_Edit,MySQL_KR,KESHAV,No,ds_xs_1,isc_shadow_pk_masked,0,Mask,Direct Update (avoid deadlocks),c_last_name,varchar,-,Last Names,UL,NULL,NULL,NULL,MAGE_LN,0,NULL,NULL,NULL,NULL,NULL
+MySQL_Template_Edit,MySQL_KR,KESHAV,No,ds_xs_1,isc_shadow_pk_not_masked,0,Mask,Direct Update (avoid deadlocks),c_first_name,varchar,-,First Names,UL,NULL,NULL,NULL,MAGE_FN,0,NULL,NULL,NULL,NULL,NULL
+MySQL_Template_Edit,MySQL_KR,KESHAV,No,ds_xs_1,isc_shadow_pk_not_masked,0,Mask,Direct Update (avoid deadlocks),c_last_name,varchar,-,Last Names,UL,NULL,NULL,NULL,MAGE_LN,0,NULL,NULL,NULL,NULL,NULL
+MySQL_Template_Edit,MySQL_KR,KESHAV,No,ds_xs_1,isc_shadow_tbl,0,Mask,Direct Update (avoid deadlocks),c_first_name,varchar,-,First Names,UL,NULL,NULL,NULL,MAGE_FN,0,NULL,NULL,NULL,NULL,NULL
+MySQL_Template_Edit,MySQL_KR,KESHAV,No,ds_xs_1,isc_shadow_tbl,0,Mask,Direct Update (avoid deadlocks),c_last_name,varchar,-,Last Names,UL,NULL,NULL,NULL,MAGE_LN,0,NULL,NULL,NULL,NULL,NULL
+MySQL_Template_Edit,MySQL_KR,KESHAV,No,ds_xs_1,isc_shadow_uq_fk_masked,0,Mask,Direct Update (avoid deadlocks),c_first_name,varchar,-,First Names,UL,NULL,NULL,NULL,MAGE_FN,0,NULL,NULL,NULL,NULL,NULL
+MySQL_Template_Edit,MySQL_KR,KESHAV,No,ds_xs_1,isc_shadow_uq_fk_masked,0,Mask,Direct Update (avoid deadlocks),c_last_name,varchar,-,Last Names,UL,NULL,NULL,NULL,MAGE_LN,0,NULL,NULL,NULL,NULL,NULL
+MySQL_Template_Edit,MySQL_KR,KESHAV,No,ds_xs_1,isc_shadow_uq_masked,0,Mask,Direct Update (avoid deadlocks),c_first_name,varchar,-,First Names,UL,NULL,NULL,NULL,MAGE_FN,0,NULL,NULL,NULL,NULL,NULL
+MySQL_Template_Edit,MySQL_KR,KESHAV,No,ds_xs_1,isc_shadow_uq_masked,0,Mask,Direct Update (avoid deadlocks),c_last_name,varchar,-,Last Names,UL,NULL,NULL,NULL,MAGE_LN,0,NULL,NULL,NULL,NULL,NULL
+MySQL_Template_Edit,MySQL_KR,KESHAV,No,ds_xs_1,isc_shadow_uq_not_masked,0,Mask,Direct Update (avoid deadlocks),c_first_name,varchar,-,First Names,UL,NULL,NULL,NULL,MAGE_FN,0,NULL,NULL,NULL,NULL,NULL
+MySQL_Template_Edit,MySQL_KR,KESHAV,No,ds_xs_1,isc_shadow_uq_not_masked,0,Mask,Direct Update (avoid deadlocks),c_last_name,varchar,-,Last Names,UL,NULL,NULL,NULL,MAGE_LN,0,NULL,NULL,NULL,NULL,NULL
+MySQL_Template_Edit,MySQL_KR,KESHAV,No,ds_xs_1,isc_subset_tbl,0,Mask,Direct Update (avoid deadlocks),c_first_name,varchar,-,First Names,UL,NULL,NULL,NULL,MAGE_FN,0,NULL,NULL,NULL,NULL,NULL
+MySQL_Template_Edit,MySQL_KR,KESHAV,No,ds_xs_1,isc_subset_tbl,0,Mask,Direct Update (avoid deadlocks),c_last_name,varchar,-,Last Names,UL,NULL,NULL,NULL,MAGE_LN,0,NULL,NULL,NULL,NULL,NULL
+MySQL_Template_Edit,MySQL_KR,KESHAV,No,ds_xs_1,isc_truncate_tbl,0,Mask,Direct Update (avoid deadlocks),c_first_name,varchar,-,First Names,UL,NULL,NULL,NULL,MAGE_FN,0,NULL,NULL,NULL,NULL,NULL
+MySQL_Template_Edit,MySQL_KR,KESHAV,No,ds_xs_1,isc_truncate_tbl,0,Mask,Direct Update (avoid deadlocks),c_last_name,varchar,-,Last Names,UL,NULL,NULL,NULL,MAGE_LN,0,NULL,NULL,NULL,NULL,NULL
+MySQL_Template_Edit,MySQL_KR,KESHAV,No,ds_xs_1,isc_uq_fk_tbl,0,Mask,Direct Update (avoid deadlocks),c_first_name,varchar,-,First Names,UL,NULL,NULL,NULL,MAGE_FN,0,NULL,NULL,NULL,NULL,NULL
+MySQL_Template_Edit,MySQL_KR,KESHAV,No,ds_xs_1,isc_uq_fk_tbl,0,Mask,Direct Update (avoid deadlocks),c_last_name,varchar,-,Last Names,UL,NULL,NULL,NULL,MAGE_LN,0,NULL,NULL,NULL,NULL,NULL
+MySQL_Template_Edit,MySQL_KR,KESHAV,No,ds_xs_1,non_english_table,0,Mask,Direct Update (avoid deadlocks),first_name,varchar,First Name,First Names,UL,NULL,NULL,NULL,MAGE_FN,0,NULL,NULL,NULL,NULL,NULL
+MySQL_Template_Edit,MySQL_KR,KESHAV,No,ds_xs_1,non_english_table,0,Mask,Direct Update (avoid deadlocks),last_name,varchar,-,Last Names,UL,NULL,NULL,NULL,MAGE_LN,0,NULL,NULL,NULL,NULL,NULL
